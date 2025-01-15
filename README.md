@@ -4,14 +4,16 @@ This repository is my guide to remember the tips I have learned that allow me to
 
 The first thing is to have a development environment that allows you to quickly work with the application locally and at the same time to see the changes in the android simulator to adjust what we want to obtain. To do this we must take into account:
 
-1. pwabuilder.com creates by default the application to a site using ssl (https). 
-2. You can access the host operating system using the address 10.0.0.2 from the android simulator (if you have a page running for example in react on the host at the url: http://localhost:3000, you can access it from chrome in the android simulator by typing in the url: http://10.0.0.2:3000). 
+- pwabuilder.com creates by default the application to a site using ssl (https). 
+- You can access the host operating system using the address 10.0.0.2 from the android simulator (if you have a page running for example in react on the host at the url: http://localhost:3000, you can access it from chrome in the android simulator by typing in the url: http://10.0.0.2:3000). 
 
 To access directly from the simulator to a page that we are running on the host operating system, but that is accessed using ssl, we will create a reverse proxy with the help of nginx (as a sample I will configure everything with macOSx but in gnu/linux it is similar). 
 
-1. Install nginx:
+- Install nginx:
 
+```sh
 brew install nginx
+```
 
 To find out where the configuration file is located we can run: `nginx -t`. Knowing the path we can add the following configuration to redirect any https from localhost to http://localhost:3000 -> `sudo nano /path-to-conf-file/nginx.conf`:
 
@@ -38,7 +40,7 @@ http {
 
 Guardar y ejecutar nginx:
 
-``sh
+```sh
 sudo nginx -s reload
 ```
 
