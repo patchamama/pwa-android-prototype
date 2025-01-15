@@ -47,6 +47,7 @@ sudo nginx -s reload
 Create the PWA application to generate the .pkg file that we will run in the Android simulator. To do this I will use as an example the site https://khmyznikov.com/ios-pwa-shell/ but it can be the one we are developing if there is already a public site on the internet accessible with SSL and that contains a manifest.json file necessary for it to work as a PWA application. Go to https://www.pwabuilder.com/reportcard?site=https://khmyznikov.com/ios-pwa-shell/ and change:
 
 *Host*: 10.0.2.2
+
 *Start URL*: /
 
 We can leave the other parameters as they are unless we want to enable **Location delegation** and **Google Play billing** if we want to use those features. Generate the package with *Download Package* and then unzip the generated file and drag the .pkg file to the simulator for installation. 
