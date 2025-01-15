@@ -55,3 +55,5 @@ We can leave the other parameters as they are unless we want to enable **Locatio
 ![](./docs/web-android-notification.png)
 
 *Make sure that the application to be developed is running locally (in our case at http://localhost:3000) so that some content can be displayed in the simulator.*
+
+In this way, the changes we make on the web, we can see them reflected directly in the android simulator. 
