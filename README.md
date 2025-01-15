@@ -52,4 +52,4 @@ Create the PWA application to generate the .pkg file that we will run in the And
 
 We can leave the other parameters as they are unless we want to enable **Location delegation** and **Google Play billing** if we want to use those features. Generate the package with *Download Package* and then unzip the generated file and drag the .pkg file to the simulator for installation. 
 
-**Make sure that the application to be developed is running locally (in our case at http://localhost:3000) so that some content can be displayed in the simulator **.
+**Make sure that the application to be developed is running locally (in our case at http://localhost:3000) so that some content can be displayed in the simulator.**
