@@ -38,10 +38,16 @@ http {
   }
 ```
 
-Save and run nginx:
+- Save and run nginx:
 
 ```sh
 sudo nginx -s reload
+```
+
+- Execute nginx as a service:
+
+```sh
+brew services start nginx
 ```
 
 Could you create the PWA application to generate the .pkg file that we will run in the Android simulator? To do this I will use as an example the site https://khmyznikov.com/ios-pwa-shell/. Still, it can be the one we are developing if there is already a public site on the internet accessible with SSL and that contains a manifest.json file necessary for it to work as a PWA application. Go to https://www.pwabuilder.com/reportcard?site=https://khmyznikov.com/ios-pwa-shell/ and change:
