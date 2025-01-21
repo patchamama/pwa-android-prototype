@@ -44,7 +44,7 @@ http {
 sudo nginx -s reload
 ```
 
-- Execute nginx as a service:
+- Execute nginx as a service: (`if error because invalid pid number: rm /opt/homebrew/var/run/nginx.pid`)
 
 ```sh
 brew services start nginx
